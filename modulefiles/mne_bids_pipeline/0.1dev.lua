@@ -1,4 +1,10 @@
+local MESA_GL_VERSION_OVERRIDE=3.3
+local MNE_3D_OPTION_ANTIALIAS='false'
+
 always_load('freesurfer')
+always_load('Xvfb')
+always_load('mesa')
+
 local version = myModuleVersion()
 local base = "/vf/users/MEGmodules/modules/mne_bids_pipeline" .. version
 local scripts = base .. "_extras/scripts"
