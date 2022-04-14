@@ -14,6 +14,7 @@ if (mode() == "load") then
     LmodMessage("[+] Loading tms_meg_scripts ",version," ...")
     LmodMessage("Available:")
     LmodMessage(" trigger_eval.py")
+    LmodMessage(" plot_M100.py")
 end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading tms_meg_scripts ",version," ...")
