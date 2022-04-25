@@ -1,0 +1,1 @@
+mamba create -p /data/MEGmodules/modules/mne1.0 conda-forge::mne==1.0 ipython pip; pip install mne_bids pip install git+https://github.com/nih-megcore/nih_to_mne git+https://github.com/nih-megcore/hv_proc; chmod -R o+rx /data/MEGmodules/modules/mne1.0
