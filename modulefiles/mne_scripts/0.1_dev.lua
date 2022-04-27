@@ -12,6 +12,9 @@ if (mode() == "load") then
     LmodMessage("[+] Loading mne_scripts ",version," ...")
     LmodMessage("Available:")
     LmodMessage(" spatiotemporal_clustering_stats.py")
+    LmodMessage(" make_meg_bids.py")
+    LmodMessage(" bstags.py")
+    LmodMessage(" calc_mnetrans.py")
 end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading mne_scripts ",version," ...")
