@@ -1,5 +1,5 @@
 local version = myModuleVersion()
-local base = "/data/ML_MEG/python_modules/megnet" .. version
+local base = "/vf/users/MEGmodules/modules/megnet" .. version
 
 family("MEGnet")
 prepend_path("PATH", pathJoin(base,"bin"))
