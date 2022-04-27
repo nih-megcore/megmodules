@@ -18,6 +18,8 @@ pushenv("OMP_NUM_THREADS", omp_nt)
 
 if (mode() == "load") then
     LmodMessage("[+] Loading mne_bids_pipeline ",version," ...")
+    LmodMessage("[+] Available Scripts")
+    LmodMessage("[+]   mne-bids-pipeline-run.py")
 end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading mne_bids_pipeline ",version," ...")
