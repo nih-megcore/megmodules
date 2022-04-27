@@ -1,4 +1,5 @@
 always_load('freesurfer')
+always_load('afni')
 local version = myModuleVersion()
 local base = "/vf/users/MEGmodules/modules/mne" .. version
 
