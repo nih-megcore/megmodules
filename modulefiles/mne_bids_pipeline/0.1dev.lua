@@ -1,6 +1,3 @@
-local MESA_GL_VERSION_OVERRIDE=3.3
-local MNE_3D_OPTION_ANTIALIAS='false'
-
 always_load('freesurfer')
 always_load('Xvfb')
 always_load('mesa')
@@ -24,3 +21,5 @@ end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading mne_bids_pipeline ",version," ...")
 end
+setenv("MESA_GL_VERSION_OVERRIDE",3.3)
+setenv("MNE_3D_OPTION_ANTIALIAS",'false')
