@@ -3,3 +3,5 @@ megnet2022.1
 bids_example_data
 mne1.0
 mne_bids_pipeline0.1dev
+mne_bids_pipeline0.2dev
+tms_meg_code1.0_extras
