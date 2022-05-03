@@ -15,7 +15,7 @@ Xvfb ${DISPLAY} -screen 0 1280x1024x24 -auth localhost&
 export THE_PID=$!
 
 #Process the script
-/vf/users/MEGmodules/modules/mne_bids_pipeline0.1dev_extras/mne-bids-pipeline/run.py $@ 
+/vf/users/MEGmodules/modules/mne_bids_pipeline0.2dev_extras/mne-bids-pipeline/run.py $@ 
 
 #Kill the screen session
 kill -15 $THE_PID
