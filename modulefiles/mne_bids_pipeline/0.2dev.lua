@@ -15,6 +15,12 @@ pushenv("OMP_NUM_THREADS", omp_nt)
 
 if (mode() == "load") then
     LmodMessage("[+] Loading mne_bids_pipeline ",version," ...")
+    LmodMessage('[+] ')
+    LmodMessage('[+] !! Make sure you have an lscratch if performing report gen!!')
+    LmodMessage('[+]    (prior to loading this module you should have initiated like below)')
+    LmodMessage('[+]    e.g.: ')
+    LmodMessage('[+]      sinteractive --mem=6G --cpus-per-task=4 --gres=lscratch:50 ')
+    LmodMessage('[+] ')
     LmodMessage("[+] Available Scripts")
     LmodMessage("[+]   mne-bids-pipeline-run.py")
 end
