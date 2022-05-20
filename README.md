@@ -11,6 +11,8 @@ Additional information can be found at: https://megcore.nih.gov/index.php?title=
   mne/1.0
   <br>
   mne_scripts - Uses the most recent version of mne on biowulf. 
+  <br>
+  mne_bids_pipeline - Process bids data
   <br><br>
   Install scripts are located in ./py_env_installs/
 
