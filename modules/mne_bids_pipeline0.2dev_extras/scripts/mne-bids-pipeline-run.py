@@ -7,8 +7,6 @@ echo for example:
 echo '     sinteractive --mem=24G --cpus-per-task=12 --gres=lscratch:10'
 exit 0
 fi
-#Xvfb :1 -screen 0 1280x1024x24 -auth localhost&
-#export DISPLAY=:1
 export DISPLAY=:$(get_freeservernum.sh)
 echo $DISPLAY
 Xvfb ${DISPLAY} -screen 0 1280x1024x24 -auth localhost&
@@ -19,5 +17,4 @@ export THE_PID=$!
 
 #Kill the screen session
 kill -15 $THE_PID
-#Xvfb :1 -screen 0 1280x1024x24 -auth localhost&
 
