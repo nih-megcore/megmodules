@@ -12,9 +12,21 @@ pushenv("OMP_NUM_THREADS", omp_nt)
 
 if (mode() == "load") then
     LmodMessage("[+] Loading tms_meg_scripts ",version," ...")
-    LmodMessage("Available:")
+    LmodMessage("Info on scripts: https://github.com/jstout211/TMS_MEG")
+    LmodMessage(" ")
+    LmodMessage("Available processing commands: (COMMAND_NAME.py -h for info)")
     LmodMessage(" trigger_eval.py")
     LmodMessage(" plot_M100.py")
+    LmodMessage(" plot_M100_src.py <BIDS_ID>")
+    LmodMessage(" fix_dsname.py <MEG.ds>")
+    LmodMessage(" ASSR_processing_bids.py")
+    LmodMessage(" M100_processing_bids.py")
+    LmodMessage(" MMF_processing_bids.py")
+    LmodMessage(" ")
+    LmodMessage("Bash Scripts:")
+    LmodMessage(" bids_loop.sh <SOURCE_ID> (from BIDS/source_data)")
+
+
 end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading tms_meg_scripts ",version," ...")
