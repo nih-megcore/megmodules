@@ -16,6 +16,7 @@ if (mode() == "load") then
     LmodMessage(" make_meg_bids.py")
     LmodMessage(" bstags.py")
     LmodMessage(" calc_mnetrans.py")
+    LmodMessage(" make_bids_fs_swarm.sh")
 end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading mne_scripts ",version," ...")
