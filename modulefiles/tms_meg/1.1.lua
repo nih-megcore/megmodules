@@ -24,6 +24,7 @@ if (mode() == "load") then
     LmodMessage(" plot_M100.py")
     LmodMessage(" plot_M100_src.py <BIDS_ID>")
     LmodMessage(" plot_interactive_visualization.py -h")
+    LmodMessage(" plot_interactive_MMF_visualization.py -h")
     LmodMessage(" fix_dsname.py <MEG.ds>")
     LmodMessage(" ASSR_processing_bids.py")
     LmodMessage(" M100_processing_bids.py")
