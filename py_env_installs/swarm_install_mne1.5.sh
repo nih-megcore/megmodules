@@ -1,0 +1,1 @@
+mamba create -p /data/MEGmodules/modules/mne1.5 --override-channels --channel=conda-forge  mne==1.5 ipython pip ; conda activate  /data/MEGmodules/modules/mne1.5;  pip install mne_bids pip install git+https://github.com/nih-megcore/nih_to_mne git+https://github.com/nih-megcore/hv_proc; chmod -R o+rx /data/MEGmodules/modules/mne1.5
