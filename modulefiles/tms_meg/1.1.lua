@@ -29,6 +29,7 @@ if (mode() == "load") then
     LmodMessage(" ASSR_processing_bids.py")
     LmodMessage(" M100_processing_bids.py")
     LmodMessage(" MMF_processing_bids.py")
+    LmodMessage(" rest_trigger_eval.py")
     LmodMessage(" ")
     LmodMessage("Bash Scripts:")
     LmodMessage(" bids_loop.sh <SOURCE_ID> (from BIDS/source_data)")
