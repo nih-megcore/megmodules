@@ -12,6 +12,7 @@ local omp_nt = os.getenv("SLURM_CPUS_PER_TASK") or "1"
 pushenv("OMP_NUM_THREADS", omp_nt)
 setenv("MESA_GL_VERSION_OVERRIDE",3.3)
 setenv("MNE_3D_OPTION_ANTIALIAS",'false')
+setenv('eroom_location', '/data/MEGmodules/extras/EmptyRoom')
 
 if (mode() == "load") then
     LmodMessage("[+] Loading mne ",version," ...")
@@ -19,3 +20,5 @@ end
 if (mode() == "unload") then
     LmodMessage("[-] Unloading mne ",version," ...")
 end
+
+execute{cmd="source $FREESURFER_HOME/SetUpFreeSurfer.sh", modeA={"load"}}

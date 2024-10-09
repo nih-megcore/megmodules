@@ -15,6 +15,8 @@ prepend_path("PATH", enigma_bin)
 local omp_nt = os.getenv("OMP_NUM_THREADS") or "1"
 pushenv("OMP_NUM_THREADS", omp_nt)
 
+execute{cmd="source $FREESURFER_HOME/SetUpFreeSurfer.sh", modeA={"load"}}
+
 if (mode() == "load") then
     LmodMessage("[+] Loading enigma_meg pipeline ",version," ...")
     LmodMessage("[+] Available Scripts")
