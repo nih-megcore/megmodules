@@ -34,3 +34,4 @@ if (mode() == "unload") then
 end
 setenv("MESA_GL_VERSION_OVERRIDE",3.3)
 setenv("MNE_3D_OPTION_ANTIALIAS",'false')
+setenv("MNE_3D_OPTION_MULTI_SAMPLES","1")
