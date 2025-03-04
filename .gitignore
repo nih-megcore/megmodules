@@ -4,6 +4,7 @@ AGREEMENT
 modules/mne0.24.1
 swarm*.e
 swarm*.o
+modules/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
