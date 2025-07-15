@@ -15,6 +15,8 @@ setenv("MNE_3D_OPTION_ANTIALIAS",'false')
 setenv("MNE_3D_OPTION_MULTI_SAMPLES","1")
 setenv('eroom_location', '/data/MEGmodules/extras/EmptyRoom')
 
+pushenv("PYTHONNOUSERSITE",1)
+
 if (mode() == "load") then
     LmodMessage("[+] Loading mne ",version," ...")
 end

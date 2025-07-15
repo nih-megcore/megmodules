@@ -3,7 +3,7 @@ always_load('afni')
 always_load('mesa')
 always_load('ctf')
 always_load('CUDA/12.1')
-local version = '1.5.1dev'
+local version = '1.5.1'
 local base = "/vf/users/MEGmodules/modules/mne" .. version
 
 family("mne")
